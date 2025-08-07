@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Otto Mendes</title>
+    
+    <!-- Tailwind CSS para estilização -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* Define a fonte Inter como padrão */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Efeito de brilho laranja sutil nos links */
+        .link-hover-effect:hover {
+            box-shadow: 0 0 15px rgba(249, 115, 22, 0.6); /* Cor Laranja (orange-500) */
+            border-color: rgba(249, 115, 22, 0.8);
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-black via-gray-900 to-black">
+
+    <!-- Container Principal -->
+    <div class="container mx-auto px-4 py-8 md:py-16 flex flex-col items-center justify-center min-h-screen">
+
+        <!-- Seção do Perfil -->
+        <header class="text-center">
+            <!-- Imagem de Perfil -->
+            <!-- DICA: Troque o 'src' pela URL da sua foto. Recomendo uma imagem quadrada. -->
+            <img 
+                src="foto.jpeg.jpg" 
+                alt="Foto de Perfil" 
+                class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-orange-500/50 shadow-lg"
+                onerror="this.onerror=null;this.src='https://placehold.co/128x128/FFFFFF/333333?text=Erro';"
+            >
+            
+            <!-- Nome e Arroba -->
+            <h1 class="text-3xl font-bold text-white">Otto Mendes</h1>
+            <p class="text-md text-gray-300 mt-1">@malafaitattoo</p>
+        </header>
+
+        <!-- Seção de Links -->
+        <main class="w-full max-w-md mt-8">
+            <div class="flex flex-col space-y-4">
+
+                <!-- Link do YouTube -->
+                <!-- IMPORTANTE: Troque o '#' pelo seu link completo -->
+                <a href="https://www.youtube.com/@Estudio_Lucrativo" target="_blank" class="flex items-center justify-center p-4 bg-gray-800/80 backdrop-blur-sm border border-orange-500/30 rounded-lg text-white font-semibold shadow-md transition-all duration-300 hover:scale-105 link-hover-effect">
+                    <i class="fab fa-youtube fa-lg mr-3 text-orange-500"></i>
+                    <span>YouTube</span>
+                </a>
+
+                <!-- Link do Instagram -->
+                <a href="https://www.instagram.com/malafaitattoo/" target="_blank" class="flex items-center justify-center p-4 bg-gray-800/80 backdrop-blur-sm border border-orange-500/30 rounded-lg text-white font-semibold shadow-md transition-all duration-300 hover:scale-105 link-hover-effect">
+                    <i class="fab fa-instagram fa-lg mr-3 text-orange-500"></i>
+                    <span>Instagram</span>
+                </a>
+
+                <!-- Link do WhatsApp -->
+                <!-- DICA: Use o formato https://wa.me/55SEUDDDSEUNUMERO -->
+                <a href="https://wa.me/5513997752120" target="_blank" class="flex items-center justify-center p-4 bg-gray-800/80 backdrop-blur-sm border border-orange-500/30 rounded-lg text-white font-semibold shadow-md transition-all duration-300 hover:scale-105 link-hover-effect">
+                    <i class="fab fa-whatsapp fa-lg mr-3 text-orange-500"></i>
+                    <span>WhatsApp - Agendametos</span>
+                </a>
+
+                <!-- Link do TikTok -->
+                <a href="https://www.tiktok.com/@malafaitattooo" target="_blank" class="flex items-center justify-center p-4 bg-gray-800/80 backdrop-blur-sm border border-orange-500/30 rounded-lg text-white font-semibold shadow-md transition-all duration-300 hover:scale-105 link-hover-effect">
+                    <i class="fab fa-tiktok fa-lg mr-3 text-orange-500"></i>
+                    <span>TikTok</span>
+                </a>
+
+                <!-- Link da Comunidade WhatsApp -->
+                <!-- IMPORTANTE: Troque o '#' pelo link da sua comunidade -->
+                <a href="https://chat.whatsapp.com/GgSJT7tNjoH0xybkLAzHPq?mode=ac_t" target="_blank" class="flex items-center justify-center p-4 bg-gray-800/80 backdrop-blur-sm border border-orange-500/30 rounded-lg text-white font-semibold shadow-md transition-all duration-300 hover:scale-105 link-hover-effect">
+                    <i class="fa-solid fa-users fa-lg mr-3 text-orange-500"></i>
+                    <span>Start Lucrativo - Agenda Cheia</span>
+                </a>
+
+            </div>
+        </main>
+
+        <!-- Rodapé -->
+        <footer class="text-center mt-12">
+            <p class="text-sm text-gray-400">Feito por André Guaraci</p>
+        </footer>
+
+    </div>
+</body>
+</html>
